@@ -10,12 +10,13 @@ txt = 0.95
 # Font size & details
 fsize = 200
 fontName = ".SFNSDisplay"
-axisName = 'wght'
-axisMin = 1
-axisMax = 1000
+axisName = list(listFontVariations(fontUwant).items())[0][0]
+axisMin = list(listFontVariations(fontUwant).items())[0][1]["minValue"]
+axisMax = list(listFontVariations(fontUwant).items())[0][1]["maxValue"]
 
 # No. of frames
 frames = 60
+fps=60
 
 textContent = "Hangeul"
 
@@ -25,7 +26,7 @@ textContent = "Hangeul"
 
 for frame in range(frames):
     newPage(w,h)
-    frameDuration(0.05)
+    frameDuration(1/fps)
     fill(bg)
     rect(0,0,w,h)
     fill(txt)
