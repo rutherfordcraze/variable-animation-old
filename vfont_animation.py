@@ -10,9 +10,9 @@ txt = 0.95
 # Font size & details
 fsize = 200
 fontName = ".SFNSDisplay"
-axisName = list(listFontVariations(fontUwant).items())[0][0]
-axisMin = list(listFontVariations(fontUwant).items())[0][1]["minValue"]
-axisMax = list(listFontVariations(fontUwant).items())[0][1]["maxValue"]
+axisName = list(listFontVariations(fontName).items())[0][0]
+axisMin = list(listFontVariations(fontName).items())[0][1]["minValue"]
+axisMax = list(listFontVariations(fontName).items())[0][1]["maxValue"]
 
 # No. of frames
 frames = 60
